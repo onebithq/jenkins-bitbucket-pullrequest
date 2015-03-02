@@ -19,11 +19,16 @@ if ($key !== null) {
 
   $obj = $json->$key;
   $params = [];
+
+  $sha = $obj->source->commit->sha;
+  if ($sha == null || $sha == '')
+    $sha = $obj->source->commit->hash;
+
   $params['job'] = $config->job_name;
   $params['token'] = @$config->token;
   $params['PULL_REQUEST_ID'] = $obj->id;
   $params['PULL_REQUEST_TITLE'] = $obj->title;
-  $params['SOURCE_COMMIT_SHA'] = $obj->source->commit->sha;
+  $params['SOURCE_COMMIT_SHA'] = $sha;
 
   $query_params = http_build_query($params);
   $url = "{$config->jenkins_url}/buildByToken/buildWithParameters";
