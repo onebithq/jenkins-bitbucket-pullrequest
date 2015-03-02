@@ -19,7 +19,7 @@ if ($pull_request_id === null || $pull_request_id == '') {
   $credential = new Bitbucket\API\Authentication\Basic($username, $password);
 
   // TODO approve/decline pull request
-  $message = 'Hmm...'
+  $message = 'Hmm...';
   if (strtolower($status) === 'pass') {
     $message = 'Test passed';
   } else {
