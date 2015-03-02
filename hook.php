@@ -20,9 +20,9 @@ if ($key !== null) {
   $obj = $json->$key;
   $params = [];
 
-  $sha = $obj->source->commit->sha;
+  $sha = @$obj->source->commit->sha;
   if ($sha == null || $sha == '')
-    $sha = $obj->source->commit->hash;
+    $sha = @$obj->source->commit->hash;
 
   $params['job'] = $config->job_name;
   $params['token'] = @$config->token;
