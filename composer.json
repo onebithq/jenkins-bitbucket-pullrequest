@@ -1,0 +1,14 @@
+{
+    "name": "akhyrul/jenkins-bitbucket-pr-hook",
+    "description": "Proxy script to trigger Jenkins build from Bitbucket pull request hook.",
+    "require": {
+        "nategood/httpful": "0.2.*",
+        "gentle/bitbucket-api": "*"
+    },
+    "authors": [
+        {
+            "name": "Akhyar Amarullah",
+            "email": "akhyrul@gmail.com"
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+	"jenkins_url": "http://jenkins.onebit.co",
+	"job_name": "WOBE_ANDROID_UNIT_TESTS",
+	"token": "onebit",
+	"bitbucket_username": "onebot",
+	"bitbucket_password": "hello"
+}
