@@ -2,6 +2,8 @@
 	"jenkins_url": "http://jenkins.onebit.co",
 	"job_name": "WOBE_ANDROID_UNIT_TESTS",
 	"token": "onebit",
-	"bitbucket_username": "onebot",
-	"bitbucket_password": "hello"
+	"bitbucket_username": "onebit",
+	"bitbucket_password": "hello",
+	"bitbucket_repo_owner": "onebit",
+	"bitbucket_repo_name": "helloworld-app"
 }
